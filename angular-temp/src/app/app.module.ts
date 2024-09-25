@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContentModule } from './content/content.module';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { ContactComponent } from './components/contact/contact.component';
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContentModule
   ],
   providers: [],
   bootstrap: [AppComponent] 
