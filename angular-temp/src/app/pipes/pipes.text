@@ -1,0 +1,3 @@
+Angular'da pipes, verilerin şablonlarda (template) nasıl gösterileceğini kolayca dönüştürmenizi sağlayan kullanışlı araçlardır.
+Bir veri biçimlendirmesi yapmak istediğinizde pipe kullanarak veriyi istediğiniz formata getirebilirsiniz.
+Bu, tarihi formatlama, metni büyük/küçük harfe dönüştürme, sayıları düzenleme gibi işlemler olabilir.

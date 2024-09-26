@@ -9,6 +9,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContentModule } from './content/content.module';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AvatarPipe } from './pipes/avatar.pipe';
 
 
 @NgModule({
@@ -18,14 +21,21 @@ import { HighlightDirective } from './directives/highlight.directive';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    HighlightDirective
+    HighlightDirective,
+   
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContentModule
+    ContentModule,
+    HttpClientModule,
+    AvatarPipe
   ],
-  providers: [],
+  providers: [
+    UserService
+
+  ],
   bootstrap: [AppComponent] 
 })
 export class AppModule { }
